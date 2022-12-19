@@ -1,0 +1,16 @@
+This python code is a banking program which provides basic banking operations such as opening accounts, making deposits, withdrawing money, and checking account balances. 
+The code is broken down into classes which include an Account class, a Checking class, a Saving class, a Business class, and a Customer class.
+
+The Account class is the abstract base class which contains the __init__ and __str__ methods which are used to initialize and print the attributes of an account. 
+It also contains two methods, deposit and withdrawl, which are used to handle deposits and withdrawals respectively.
+
+The Checking, Saving, and Business classes are all subclasses of Account which handle specific account types. Each class contains an __init__ method 
+which calls the __init__ method from the Account class and a __str__ method which returns the bank statement as a string.
+
+The Customer class contains an __init__ method which initializes the name and pin of the customer and a dictionary of accounts (C, S, and B)
+which keep track of the customer's accounts. It also contains methods for opening checking, saving, and business accounts.
+
+The main function contains several helper functions used to handle the various banking operations. 
+It also contains a loop which allows the user to select the service they would like to use (banking or ATM). 
+The banking option allows the user to open a new account, deposit money into an existing account, and check their total deposits in all accounts. 
+The ATM option allows the user to withdraw money from an existing account.
